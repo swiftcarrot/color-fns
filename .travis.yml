@@ -1,7 +1,6 @@
 language: node_js
 node_js:
-  - "0.12"
-script:
-  - istanbul cover test.js
+  - node
+cache: yarn
 after_success:
   - bash <(curl -s https://codecov.io/bash)
