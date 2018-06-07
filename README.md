@@ -14,13 +14,13 @@ npm install color-functions --save
 
 ```javascript
 // import all functions
-var cf = require('color-functions');
-var hex2rgb = cf.hex2rgb;
+const cf = require('color-functions');
+const hex2rgb = cf.hex2rgb;
 
 // import single function
 // (to reduce bundle script size with browserify or webpack)
-var hex2rgb = require('color-functions/lib/hex2rgb');
-var cssColor = require('color-functions/lib/css-color');
+const hex2rgb = require('color-functions/dist/hex2rgb');
+const cssColor = require('color-functions/dist/css-color');
 ```
 
 ### Available functions
