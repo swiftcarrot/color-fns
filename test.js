@@ -1,14 +1,14 @@
-var cf = require('./index');
 var test = require('tape');
+var cf = require('./index');
 
 var eps = 1;
 
 test('hex2rgb', function(t) {
   t.plan(4);
-  t.deepEqual(cf.hex2rgb('3498db'), {r: 52, g: 152, b: 219});
-  t.deepEqual(cf.hex2rgb('#3498db'), {r: 52, g: 152, b: 219});
-  t.deepEqual(cf.hex2rgb('#aabbcc'), {r: 170, g: 187, b: 204});
-  t.deepEqual(cf.hex2rgb('#abc'), {r: 170, g: 187, b: 204});
+  t.deepEqual(cf.hex2rgb('3498db'), { r: 52, g: 152, b: 219 });
+  t.deepEqual(cf.hex2rgb('#3498db'), { r: 52, g: 152, b: 219 });
+  t.deepEqual(cf.hex2rgb('#aabbcc'), { r: 170, g: 187, b: 204 });
+  t.deepEqual(cf.hex2rgb('#abc'), { r: 170, g: 187, b: 204 });
 });
 
 test('hsv2hex', function(t) {
@@ -18,9 +18,9 @@ test('hsv2hex', function(t) {
 
 test('hsv2rgb', function(t) {
   t.plan(3);
-  t.deepEqual(cf.hsv2rgb(36, 76, 86), {r: 219, g: 153, b: 53});
-  t.deepEqual(cf.hsv2rgb(156, 76, 86), {r: 53, g: 219, b: 153});
-  t.deepEqual(cf.hsv2rgb(204, 76, 86), {r: 53, g: 153, b: 219});
+  t.deepEqual(cf.hsv2rgb(36, 76, 86), { r: 219, g: 153, b: 53 });
+  t.deepEqual(cf.hsv2rgb(156, 76, 86), { r: 53, g: 219, b: 153 });
+  t.deepEqual(cf.hsv2rgb(204, 76, 86), { r: 53, g: 153, b: 219 });
 });
 
 test('rgb2hex', function(t) {
@@ -30,9 +30,9 @@ test('rgb2hex', function(t) {
 
 test('rgb2hsv', function(t) {
   t.plan(3);
-  t.deepEqual(cf.rgb2hsv(219, 152, 52), {h: 36, s: 76, v: 86});
-  t.deepEqual(cf.rgb2hsv(52, 219, 152), {h: 156, s: 76, v: 86});
-  t.deepEqual(cf.rgb2hsv(52, 152, 219), {h: 204, s: 76, v: 86});
+  t.deepEqual(cf.rgb2hsv(219, 152, 52), { h: 36, s: 76, v: 86 });
+  t.deepEqual(cf.rgb2hsv(52, 219, 152), { h: 156, s: 76, v: 86 });
+  t.deepEqual(cf.rgb2hsv(52, 152, 219), { h: 204, s: 76, v: 86 });
 });
 
 test('rgba', function(t) {
@@ -60,37 +60,57 @@ test('hsl2hsv', function(t) {
 
 test('hsl2rgb', function(t) {
   t.plan(1);
-  t.deepEqual(cf.hsl2rgb(204, 70, 53), {r: 51, g: 152, b: 219});
+  t.deepEqual(cf.hsl2rgb(204, 70, 53), { r: 51, g: 152, b: 219 });
 });
 
 test('css-color', function(t) {
-  t.deepEqual(cf.cssColor('blue'), {r: 0, g: 0, b: 255, a: 100});
-  t.deepEqual(cf.cssColor('rebeccapurple'), {r: 102, g: 51, b: 153, a: 100});
+  t.deepEqual(cf.cssColor('blue'), { r: 0, g: 0, b: 255, a: 100 });
+  t.deepEqual(cf.cssColor('rebeccapurple'), { r: 102, g: 51, b: 153, a: 100 });
   t.deepEqual(cf.cssColor('blue'), cf.cssColor('rgb(0,0,255)'));
 
-  t.deepEqual(cf.cssColor('Blue'), {r: 0, g: 0, b: 255, a: 100});
-  t.deepEqual(cf.cssColor('BLUE'), {r: 0, g: 0, b: 255, a: 100});
-  t.deepEqual(cf.cssColor('Rebeccapurple'), {r: 102, g: 51, b: 153, a: 100});
-  t.deepEqual(cf.cssColor('REBECCAPURPLE'), {r: 102, g: 51, b: 153, a: 100});
+  t.deepEqual(cf.cssColor('Blue'), { r: 0, g: 0, b: 255, a: 100 });
+  t.deepEqual(cf.cssColor('BLUE'), { r: 0, g: 0, b: 255, a: 100 });
+  t.deepEqual(cf.cssColor('Rebeccapurple'), { r: 102, g: 51, b: 153, a: 100 });
+  t.deepEqual(cf.cssColor('REBECCAPURPLE'), { r: 102, g: 51, b: 153, a: 100 });
 
-  t.deepEqual(cf.cssColor('#fc0'), {r: 255, g: 204, b: 0, a: 100});
-  t.deepEqual(cf.cssColor('#ffcc00'), {r: 255, g: 204, b: 0, a: 100});
-  t.deepEqual(cf.cssColor('rgb(255, 204, 0)'), {r: 255, g: 204, b: 0, a: 100});
-  t.deepEqual(cf.cssColor('rgba(255, 204, 0, 1)'), {r: 255, g: 204, b: 0, a: 100});
+  t.deepEqual(cf.cssColor('#fc0'), { r: 255, g: 204, b: 0, a: 100 });
+  t.deepEqual(cf.cssColor('#ffcc00'), { r: 255, g: 204, b: 0, a: 100 });
+  t.deepEqual(cf.cssColor('rgb(255, 204, 0)'), {
+    r: 255,
+    g: 204,
+    b: 0,
+    a: 100
+  });
+  t.deepEqual(cf.cssColor('rgba(255, 204, 0, 1)'), {
+    r: 255,
+    g: 204,
+    b: 0,
+    a: 100
+  });
 
-  t.deepEqual(cf.cssColor('rgba(0,0,0,0.5)'), {r: 0, g: 0, b: 0, a: 50});
-  t.deepEqual(cf.cssColor('rgba(0,0,0,.5)'), {r: 0, g: 0, b: 0, a: 50});
-  t.deepEqual(cf.cssColor('rgba(0,0,0,.75)'), {r: 0, g: 0, b: 0, a: 75});
-  t.deepEqual(cf.cssColor('rgba(0,0,0,.755)'), {r: 0, g: 0, b: 0, a: 75.5});
+  t.deepEqual(cf.cssColor('rgba(0,0,0,0.5)'), { r: 0, g: 0, b: 0, a: 50 });
+  t.deepEqual(cf.cssColor('rgba(0,0,0,.5)'), { r: 0, g: 0, b: 0, a: 50 });
+  t.deepEqual(cf.cssColor('rgba(0,0,0,.75)'), { r: 0, g: 0, b: 0, a: 75 });
+  t.deepEqual(cf.cssColor('rgba(0,0,0,.755)'), { r: 0, g: 0, b: 0, a: 75.5 });
 
-  t.deepEqual(cf.cssColor('hsl(0, 100%, 50%)'), {r: 255, g: 0, b: 0, a: 100});
-  t.deepEqual(cf.cssColor('hsla(240,100%,50%,0.05)'), {r: 0, g: 0, b: 255, a: 5});
-  t.deepEqual(cf.cssColor('hsla(240, 100%, 50%, 0.05)'), {r: 0, g: 0, b: 255, a: 5});
+  t.deepEqual(cf.cssColor('hsl(0, 100%, 50%)'), { r: 255, g: 0, b: 0, a: 100 });
+  t.deepEqual(cf.cssColor('hsla(240,100%,50%,0.05)'), {
+    r: 0,
+    g: 0,
+    b: 255,
+    a: 5
+  });
+  t.deepEqual(cf.cssColor('hsla(240, 100%, 50%, 0.05)'), {
+    r: 0,
+    g: 0,
+    b: 255,
+    a: 5
+  });
   t.end();
 });
 
 test('rgba2rgb', function(t) {
-  t.deepEqual(cf.rgba2rgb(50, 100, 200, 70), {r: 111, g: 146, b: 216});
+  t.deepEqual(cf.rgba2rgb(50, 100, 200, 70), { r: 111, g: 146, b: 216 });
   t.end();
 });
 

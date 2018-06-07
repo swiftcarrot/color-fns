@@ -4,7 +4,7 @@
   "description": "color functions for node and browser",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/tape/bin/tape test.js"
+    "test": "tape test.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/pqx/color-functions#readme",
   "devDependencies": {
-    "istanbul": "^0.3.17",
-    "tape": "^4.1.0"
+    "istanbul": "^0.4.5",
+    "tape": "^4.9.0"
   }
 }
