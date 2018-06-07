@@ -4,7 +4,9 @@
   "description": "color functions for node and browser",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js"
+    "build": "babel lib/ -d dist/",
+    "prepublish": "npm run build",
+    "test": "flow && jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,15 @@
   },
   "homepage": "https://github.com/wangzuo/color-functions#readme",
   "devDependencies": {
-    "istanbul": "^0.4.5",
-    "tape": "^4.9.0"
-  }
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/preset-flow": "^7.0.0-beta.49",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^23.0.1",
+    "flow-bin": "^0.73.0",
+    "jest": "^23.1.0",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "dependencies": {}
 }
