@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pqx/color-functions.git"
+    "url": "git+https://github.com/wangzuo/color-functions.git"
   },
   "keywords": [
     "color",
@@ -21,9 +21,9 @@
   "author": "Wang Zuo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pqx/color-functions/issues"
+    "url": "https://github.com/wangzuo/color-functions/issues"
   },
-  "homepage": "https://github.com/pqx/color-functions#readme",
+  "homepage": "https://github.com/wangzuo/color-functions#readme",
   "devDependencies": {
     "istanbul": "^0.4.5",
     "tape": "^4.9.0"
