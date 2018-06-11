@@ -2,12 +2,14 @@
 
 [![Build Status](https://travis-ci.org/wangzuo/color-functions.svg)](https://travis-ci.org/wangzuo/color-functions) [![codecov.io](http://codecov.io/github/wangzuo/color-functions/coverage.svg?branch=master)](http://codecov.io/github/wangzuo/color-functions?branch=master)
 
-color functions for node and browser (`browserify`, `webpack`, ...)
+Color functions for node and browser (via `browserify`, `webpack`, ...)
 
 ### Installation
 
 ```sh
 npm install color-functions --save
+# or
+yarn add color-functions
 ```
 
 ### Usage
@@ -18,7 +20,7 @@ const cf = require('color-functions');
 const hex2rgb = cf.hex2rgb;
 
 // import single function
-// (to reduce bundle script size with browserify or webpack)
+// to reduce bundle size with browserify or webpack
 const hex2rgb = require('color-functions/dist/hex2rgb');
 const cssColor = require('color-functions/dist/css-color');
 ```
