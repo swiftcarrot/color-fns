@@ -1,5 +1,6 @@
 module.exports = {
   hex2rgb: require('./dist/hex2rgb'),
+  hex2hsl: require('./dist/hex2hsl'),
   hsv2hex: require('./dist/hsv2hex'),
   hsv2rgb: require('./dist/hsv2rgb'),
   rgb2hex: require('./dist/rgb2hex'),
