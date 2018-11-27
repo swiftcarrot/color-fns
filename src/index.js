@@ -10,3 +10,4 @@ export hsl2hsv from './hsl2hsv';
 export hsv2hsl from './hsv2hsl';
 export hsl2rgb from './hsl2rgb';
 export cssColor from './css-color';
+export hex2hsl from './hex2hsl';

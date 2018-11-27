@@ -1,16 +1,9 @@
 // @flow
 // based on component/color-parser
 import hsl2rgb from './hsl2rgb';
-import colors from './_colors';
+import colors from './colors';
 
-<<<<<<< HEAD:lib/css-color.js
-const hsl2rgb = require('./hsl2rgb');
-const colors = require('./colors');
-
-function parse(str: string) {
-=======
 export default function parse(str: string) {
->>>>>>> es6:src/css-color.js
   return (
     named(str) ||
     hex3(str) ||
@@ -113,4 +106,3 @@ function hsla(str) {
     return { ...rgb, a };
   }
 }
-
