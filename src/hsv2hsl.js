@@ -1,6 +1,5 @@
 // @flow
-
-module.exports = function(h: number, s: number, v: number) {
+export default function(h: number, s: number, v: number) {
   var hh = ((200 - s) * v) / 100;
 
   return {
@@ -8,4 +7,4 @@ module.exports = function(h: number, s: number, v: number) {
     s: (s * v) / (hh < 100 ? hh : 200 - hh),
     l: hh / 2
   };
-};
+}

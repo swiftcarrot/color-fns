@@ -1,9 +1,0 @@
-lib
-.babelrc
-.flowconfig
-.travis.yml
-.zuul.yml
-jest.config.js
-test.js
-yarn.lock
-coverage

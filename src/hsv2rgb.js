@@ -1,6 +1,5 @@
 // @flow
-
-module.exports = function(
+export default function(
   h: number,
   s: number,
   v: number
@@ -45,4 +44,4 @@ module.exports = function(
     g: Math.round(255 * (rgb[1] + m)),
     b: Math.round(255 * (rgb[2] + m))
   };
-};
+}

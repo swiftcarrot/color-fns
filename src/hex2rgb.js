@@ -1,5 +1,5 @@
 // @flow
-module.exports = function(hex: string) {
+export default function(hex: string) {
   if (hex[0] === '#') hex = hex.substr(1);
 
   if (hex.length === 6) {
@@ -15,4 +15,4 @@ module.exports = function(hex: string) {
       b: parseInt(hex[2] + hex[2], 16)
     };
   }
-};
+}

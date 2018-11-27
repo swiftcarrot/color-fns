@@ -1,6 +1,5 @@
 // @flow
-
-module.exports = function(r: number, g: number, b: number) {
+export default function(r: number, g: number, b: number) {
   var h, s, v;
   var max = Math.max(r, g, b);
   var min = Math.min(r, g, b);
@@ -31,4 +30,4 @@ module.exports = function(r: number, g: number, b: number) {
     s: s,
     v: v
   };
-};
+}
