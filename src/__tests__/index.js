@@ -1,4 +1,4 @@
-const cf = require('./lib');
+import * as cf from '../';
 
 const eps = 1;
 

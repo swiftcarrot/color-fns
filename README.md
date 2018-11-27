@@ -15,19 +15,18 @@ yarn add color-functions
 ### Usage
 
 ```javascript
-// import all functions
-const cf = require('color-functions');
-const hex2rgb = cf.hex2rgb;
+// commonjs
+const { hex2rgb } = require('color-functions');
 
-// import single function
-// to reduce bundle size with browserify or webpack
-const hex2rgb = require('color-functions/dist/hex2rgb');
-const cssColor = require('color-functions/dist/css-color');
+// es module
+import { hex2rgb, cssColor } from 'color-functions';
+import * as cf from 'color-functions';
 ```
 
 ### Available functions
 
 - `hex2rgb`
+- `hex2hsl`
 - `hsv2hex`
 - `hsv2rgb`
 - `rgb2hex`
