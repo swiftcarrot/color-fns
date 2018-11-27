@@ -25,19 +25,19 @@ import * as cf from 'color-functions';
 
 ### Available functions
 
-- `hex2rgb`
+- `cssColor`: parse a valid css [color value](https://developer.mozilla.org/en/docs/Web/CSS/color_value) to rgba format
 - `hex2hsl`
+- `hex2rgb`
+- `hsl2hsv`
+- `hsl2rgb`
 - `hsv2hex`
+- `hsv2hsl`
 - `hsv2rgb`
 - `rgb2hex`
 - `rgb2hsv`
 - `rgba`
-- `hsl2hsv`
-- `hsv2hsl`
-- `hsl2rgb`
-- `rgba2rgb`
 - `rgba2hex`
-- `cssColor`: parse a valid css [color value](https://developer.mozilla.org/en/docs/Web/CSS/color_value) to rgba format
+- `rgba2rgb`
 
 ### License
 
