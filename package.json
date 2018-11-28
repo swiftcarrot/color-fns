@@ -10,6 +10,7 @@
     "prepublishOnly": "npm test && npm run build",
     "watch": "rollup -cw"
   },
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wangzuo/color-functions.git"
