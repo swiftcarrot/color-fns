@@ -4,14 +4,14 @@ export default function(
   s: number,
   v: number
 ): { r: number, g: number, b: number } {
-  var s = s / 100,
-    v = v / 100;
-  var rgb = [];
+  s = s / 100;
+  v = v / 100;
 
-  var c = v * s;
-  var hh = h / 60;
-  var x = c * (1 - Math.abs((hh % 2) - 1));
-  var m = v - c;
+  let rgb = [];
+  const c = v * s;
+  const hh = h / 60;
+  const x = c * (1 - Math.abs((hh % 2) - 1));
+  const m = v - c;
 
   switch (parseInt(hh, 10)) {
     case 0:

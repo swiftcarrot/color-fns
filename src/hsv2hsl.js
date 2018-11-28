@@ -1,6 +1,10 @@
 // @flow
-export default function(h: number, s: number, v: number) {
-  var hh = ((200 - s) * v) / 100;
+export default function(
+  h: number,
+  s: number,
+  v: number
+): { h: number, s: number, l: number } {
+  const hh = ((200 - s) * v) / 100;
 
   return {
     h: h,
