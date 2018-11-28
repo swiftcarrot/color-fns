@@ -1,6 +1,6 @@
 {
   "name": "color-functions",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "color functions for node and browser",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -10,7 +10,9 @@
     "prepublishOnly": "npm test && npm run build",
     "watch": "rollup -cw"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wangzuo/color-functions.git"
