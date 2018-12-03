@@ -40,6 +40,8 @@ import * as cf from 'color-functions';
 - `rgba2hex`
 - `rgba2rgb`
 
+check [test](https://github.com/wangzuo/color-functions/blob/master/src/__tests__/index.js) for more examples
+
 ### License
 
 MIT
