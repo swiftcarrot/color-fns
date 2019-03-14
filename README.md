@@ -1,7 +1,10 @@
 # color-functions
 
 [![npm](https://img.shields.io/npm/v/color-functions.svg)](https://www.npmjs.com/package/color-functions)
-[![Build Status](https://travis-ci.org/wangzuo/color-functions.svg)](https://travis-ci.org/wangzuo/color-functions) [![codecov.io](http://codecov.io/github/wangzuo/color-functions/coverage.svg?branch=master)](http://codecov.io/github/wangzuo/color-functions?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/wangzuo/color-functions.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/wangzuo/color-functions.svg?branch=master)](https://travis-ci.org/wangzuo/color-functions)
+[![codecov](https://codecov.io/gh/wangzuo/color-functions/branch/master/graph/badge.svg)](https://codecov.io/gh/wangzuo/color-functions)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![Greenkeeper badge](https://badges.greenkeeper.io/wangzuo/color-functions.svg)](https://greenkeeper.io/)
 
 Color functions for node and browser (via `browserify`, `webpack`, ...)
 
