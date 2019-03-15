@@ -5,5 +5,5 @@ function convert(num: number) {
 }
 
 export default function(r: number, g: number, b: number) {
-  return [convert(r), convert(g), convert(b)].join('');
+  return '#' + [convert(r), convert(g), convert(b)].join('');
 }

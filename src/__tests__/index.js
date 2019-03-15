@@ -10,7 +10,7 @@ test('hex2rgb', function() {
 });
 
 test('hsv2hex', function() {
-  expect(cf.hsv2hex(204, 76, 86)).toBe('3599db');
+  expect(cf.hsv2hex(204, 76, 86)).toBe('#3599db');
 });
 
 test('hsv2rgb', function() {
@@ -20,7 +20,7 @@ test('hsv2rgb', function() {
 });
 
 test('rgb2hex', function() {
-  expect(cf.rgb2hex(52, 152, 219)).toBe('3498db');
+  expect(cf.rgb2hex(52, 152, 219)).toBe('#3498db');
 });
 
 test('rgb2hsv', function() {
@@ -131,5 +131,5 @@ test('rgba2rgb', function() {
 });
 
 test('rgba2hex', function() {
-  expect(cf.rgba2hex(50, 100, 200, 70)).toBe('6f92d8');
+  expect(cf.rgba2hex(50, 100, 200, 70)).toBe('#6f92d8');
 });
