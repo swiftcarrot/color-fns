@@ -38,7 +38,7 @@
     "@babel/preset-flow": "^7.0.0-beta.49",
     "babel-core": "^7.0.0-0",
     "babel-jest": "^24.5.0",
-    "flow-bin": "^0.95.0",
+    "flow-bin": "^0.96.0",
     "jest": "^24.5.0",
     "regenerator-runtime": "^0.13.1",
     "rollup": "^1.6.0",
