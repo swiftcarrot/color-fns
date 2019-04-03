@@ -1,6 +1,6 @@
 {
   "name": "color-functions",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "color functions for node and browser",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
