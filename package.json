@@ -4,6 +4,7 @@
   "description": "color functions for node and browser",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "sideEffects": false,
   "scripts": {
     "build": "rollup -c",
     "test": "flow && jest --coverage",
