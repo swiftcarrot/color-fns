@@ -1,31 +1,30 @@
-# color-functions
+# @swiftcarrot/color-fns
 
-[![npm](https://img.shields.io/npm/v/color-functions.svg)](https://www.npmjs.com/package/color-functions)
-[![npm](https://img.shields.io/npm/dm/color-functions.svg)](https://www.npmjs.com/package/color-functions)
-[![Build Status](https://travis-ci.org/wangzuo/color-functions.svg?branch=master)](https://travis-ci.org/wangzuo/color-functions)
-[![codecov](https://codecov.io/gh/wangzuo/color-functions/branch/master/graph/badge.svg)](https://codecov.io/gh/wangzuo/color-functions)
+[![npm](https://img.shields.io/npm/v/@swiftcarrot/color-fns.svg)](https://www.npmjs.com/package/@swiftcarrot/color-fns)
+[![npm](https://img.shields.io/npm/dm/@swiftcarrot/color-fns.svg)](https://www.npmjs.com/package/@swiftcarrot/color-fns)
+[![Build Status](https://travis-ci.org/swiftcarrot/color-fns.svg?branch=master)](https://travis-ci.org/swiftcarrot/color-fns)
+[![codecov](https://codecov.io/gh/swiftcarrot/color-fns/branch/master/graph/badge.svg)](https://codecov.io/gh/swiftcarrot/color-fns)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Greenkeeper badge](https://badges.greenkeeper.io/wangzuo/color-functions.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/swiftcarrot/color-fns.svg)](https://greenkeeper.io/)
 
 Color functions for node and browser (via `browserify`, `webpack`, ...)
 
 ### Installation
 
 ```sh
-npm install color-functions --save
-# or
-yarn add color-functions
+npm install @swiftcarrot/color-fns --save
+yarn add @swiftcarrot/color-fns
 ```
 
 ### Usage
 
 ```javascript
 // commonjs
-const { hex2rgb } = require('color-functions');
+const { hex2rgb } = require('@swiftcarrot/color-fns');
 
 // es module
-import { hex2rgb, cssColor } from 'color-functions';
-import * as cf from 'color-functions';
+import { hex2rgb, cssColor } from '@swiftcarrot/color-fns';
+import * as fns from '@swiftcarrot/color-fns';
 ```
 
 ### Available functions
@@ -44,7 +43,7 @@ import * as cf from 'color-functions';
 - `rgba2hex`
 - `rgba2rgb`
 
-check [test](https://github.com/wangzuo/color-functions/blob/master/src/__tests__/index.js) for more examples
+check [test](https://github.com/swiftcarrot/color-fns/blob/master/src/__tests__/index.js) for more examples
 
 ### License
 
