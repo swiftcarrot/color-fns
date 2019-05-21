@@ -1,6 +1,6 @@
 {
   "name": "@swiftcarrot/color-fns",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "color functions for node and browser",
   "publishConfig": {
     "access": "public"
