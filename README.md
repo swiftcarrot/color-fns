@@ -5,9 +5,8 @@
 [![Build Status](https://travis-ci.org/swiftcarrot/color-fns.svg?branch=master)](https://travis-ci.org/swiftcarrot/color-fns)
 [![codecov](https://codecov.io/gh/swiftcarrot/color-fns/branch/master/graph/badge.svg)](https://codecov.io/gh/swiftcarrot/color-fns)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Greenkeeper badge](https://badges.greenkeeper.io/swiftcarrot/color-fns.svg)](https://greenkeeper.io/)
 
-Color functions for node and browser (via `browserify`, `webpack`, ...)
+Color functions for node and browser
 
 ### Installation
 
