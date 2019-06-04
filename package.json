@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/swiftcarrot/color-fns/issues"
   },
-  "homepage": "https://github.com/swiftcarrot/color-fns#readme",
+  "homepage": "https://swiftcarrot.dev/color-fns",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/plugin-proposal-export-default-from": "^7.2.0",
