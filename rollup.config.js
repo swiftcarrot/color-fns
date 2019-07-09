@@ -13,7 +13,10 @@ export default [
     },
     external,
     plugins: [
-      babel(),
+      babel({
+        runtimeHelpers: true,
+        plugins: ['@babel/transform-runtime']
+      })
     ]
   },
 
@@ -25,7 +28,10 @@ export default [
     },
     external,
     plugins: [
-      babel(),
+      babel({
+        runtimeHelpers: true,
+        plugins: [['@babel/transform-runtime', { useESModules: true }]]
+      })
     ]
   }
 ];
