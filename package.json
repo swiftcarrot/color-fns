@@ -39,7 +39,7 @@
     "@babel/core": "^7.4.4",
     "babel-jest": "^24.8.0",
     "babel-preset-swiftcarrot": "^1.0.0",
-    "flow-bin": "^0.102.0",
+    "flow-bin": "^0.106.3",
     "jest": "^24.8.0",
     "rollup": "^1.12.3",
     "rollup-plugin-babel": "^4.3.2"
