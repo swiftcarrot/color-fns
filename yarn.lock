@@ -1986,10 +1986,10 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-flow-bin@^0.102.0:
-  version "0.102.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.102.0.tgz#3d5de44bcc26d26585e932b3201988b766f9b380"
-  integrity sha512-mYon6noeLO0Q5SbiWULLQeM1L96iuXnRtYMd47j3bEWXAwUW9EnwNWcn+cZg/jC/Dg4Wj/jnkdTDEuFtbeu1ww==
+flow-bin@^0.118.0:
+  version "0.118.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.118.0.tgz#fb706364a58c682d67a2ca7df39396467dc397d1"
+  integrity sha512-jlbUu0XkbpXeXhan5xyTqVK1jmEKNxE8hpzznI3TThHTr76GiFwK0iRzhDo4KNy+S9h/KxHaqVhTP86vA6wHCg==
 
 for-in@^1.0.2:
   version "1.0.2"
