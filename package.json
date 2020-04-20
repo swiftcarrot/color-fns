@@ -37,7 +37,7 @@
   "homepage": "https://swiftcarrot.dev/color-fns",
   "devDependencies": {
     "@babel/core": "^7.4.4",
-    "babel-jest": "^24.8.0",
+    "babel-jest": "^25.4.0",
     "babel-preset-swiftcarrot": "^1.0.0",
     "flow-bin": "^0.102.0",
     "jest": "^24.8.0",
