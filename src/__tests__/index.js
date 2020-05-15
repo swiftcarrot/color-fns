@@ -9,6 +9,13 @@ test('hex2rgb', function() {
   expect(cf.hex2rgb('#abc')).toEqual({ r: 170, g: 187, b: 204 });
 });
 
+test('hex2alpha', () => {
+  expect(cf.hex2alpha('ff')).toEqual(100);
+  expect(cf.hex2alpha('f7')).toEqual(97);
+  expect(cf.hex2alpha('38')).toEqual(22);
+  expect(cf.hex2alpha('00')).toEqual(0);
+});
+
 test('hsv2hex', function() {
   expect(cf.hsv2hex(204, 76, 86)).toBe('#3599db');
 });
