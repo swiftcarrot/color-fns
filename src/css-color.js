@@ -22,7 +22,7 @@ function named(str) {
     r: c[0],
     g: c[1],
     b: c[2],
-    a: 100
+    a: 100,
   };
 }
 
@@ -34,7 +34,7 @@ function rgb(str) {
       r: parts[0],
       g: parts[1],
       b: parts[2],
-      a: 100
+      a: 100,
     };
   }
 }
@@ -48,7 +48,7 @@ function rgba(str) {
       r: parts[0],
       g: parts[1],
       b: parts[2],
-      a: parts[3] * 100
+      a: parts[3] * 100,
     };
   }
 }
@@ -59,7 +59,7 @@ function hex6(str) {
       r: parseInt(str.slice(1, 3), 16),
       g: parseInt(str.slice(3, 5), 16),
       b: parseInt(str.slice(5, 7), 16),
-      a: 100
+      a: 100,
     };
   }
 }
@@ -70,7 +70,7 @@ function hex3(str) {
       r: parseInt(str[1] + str[1], 16),
       g: parseInt(str[2] + str[2], 16),
       b: parseInt(str[3] + str[3], 16),
-      a: 100
+      a: 100,
     };
   }
 }

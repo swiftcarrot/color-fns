@@ -1,5 +1,5 @@
 // @flow
-export default function(
+export default function (
   r: number,
   g: number,
   b: number,
@@ -10,6 +10,6 @@ export default function(
   return {
     r: parseInt((1 - a) * 255 + a * r, 10),
     g: parseInt((1 - a) * 255 + a * g, 10),
-    b: parseInt((1 - a) * 255 + a * b, 10)
+    b: parseInt((1 - a) * 255 + a * b, 10),
   };
 }

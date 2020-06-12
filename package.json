@@ -41,6 +41,7 @@
     "babel-preset-swiftcarrot": "^1.0.0",
     "flow-bin": "^0.102.0",
     "jest": "^24.8.0",
+    "prettier": "^2.0.5",
     "rollup": "^1.12.3",
     "rollup-plugin-babel": "^4.3.2"
   },

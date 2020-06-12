@@ -1,5 +1,5 @@
 // @flow
-export default function(
+export default function (
   r: number,
   g: number,
   b: number

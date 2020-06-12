@@ -1,5 +1,5 @@
 // @flow
-export default function(
+export default function (
   h: number,
   s: number,
   v: number
@@ -42,6 +42,6 @@ export default function(
   return {
     r: Math.round(255 * (rgb[0] + m)),
     g: Math.round(255 * (rgb[1] + m)),
-    b: Math.round(255 * (rgb[2] + m))
+    b: Math.round(255 * (rgb[2] + m)),
   };
 }

@@ -1,5 +1,5 @@
 // @flow
-export default function(
+export default function (
   h: number,
   s: number,
   v: number
@@ -9,6 +9,6 @@ export default function(
   return {
     h: h,
     s: (s * v) / (hh < 100 ? hh : 200 - hh),
-    l: hh / 2
+    l: hh / 2,
   };
 }
