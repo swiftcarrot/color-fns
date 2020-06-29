@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [3.1.1]
+
+- fix missing dependency `@babel/runtime`
+
 ## [3.1.0]
 
 - add hex2alpha
