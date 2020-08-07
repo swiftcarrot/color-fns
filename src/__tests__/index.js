@@ -20,12 +20,6 @@ test('hsv2hex', function () {
   expect(cf.hsv2hex(204, 76, 86)).toBe('#3599db');
 });
 
-test('hsv2rgb', function () {
-  expect(cf.hsv2rgb(36, 76, 86)).toEqual({ r: 219, g: 153, b: 53 });
-  expect(cf.hsv2rgb(156, 76, 86)).toEqual({ r: 53, g: 219, b: 153 });
-  expect(cf.hsv2rgb(204, 76, 86)).toEqual({ r: 53, g: 153, b: 219 });
-});
-
 test('rgb2hex', function () {
   expect(cf.rgb2hex(52, 152, 219)).toBe('#3498db');
 });

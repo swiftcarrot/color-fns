@@ -13,30 +13,20 @@ export default function (
   const x = c * (1 - Math.abs((hh % 2) - 1));
   const m = v - c;
 
-  switch (parseInt(hh, 10)) {
-    case 0:
-      rgb = [c, x, 0];
-      break;
-
-    case 1:
-      rgb = [x, c, 0];
-      break;
-
-    case 2:
-      rgb = [0, c, x];
-      break;
-
-    case 3:
-      rgb = [0, x, c];
-      break;
-
-    case 4:
-      rgb = [x, 0, c];
-      break;
-
-    case 5:
-      rgb = [c, 0, x];
-      break;
+  if (hh >= 0 && hh < 1) {
+    rgb = [c, x, 0];
+  } else if (hh >= 1 && hh < 2) {
+    rgb = [x, c, 0];
+  } else if (hh >= 2 && hh < 3) {
+    rgb = [0, c, x];
+  } else if (h >= 3 && hh < 4) {
+    rgb = [0, x, c];
+  } else if (h >= 4 && hh < 5) {
+    rgb = [x, 0, c];
+  } else if (h >= 5 && hh <= 6) {
+    rgb = [c, 0, x];
+  } else {
+    rgb = [0, 0, 0];
   }
 
   return {

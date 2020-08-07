@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [3.1.2]
+
+- add h=360 support to hsv/hsl
+
 ## [3.1.1]
 
 - fix missing dependency `@babel/runtime`
