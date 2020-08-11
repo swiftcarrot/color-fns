@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [3.2.0]
+
+- add `hex2hsv`
+
 ## [3.1.2]
 
 - add h=360 support to hsv/hsl
