@@ -30,6 +30,7 @@ import * as fns from '@swiftcarrot/color-fns';
 
 - `cssColor`: parse a valid css [color value](https://developer.mozilla.org/en/docs/Web/CSS/color_value) to rgba format
 - `hex2hsl`
+- `hex2hsv`
 - `hex2rgb`
 - `hsl2hsv`
 - `hsl2rgb`
